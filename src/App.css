@@ -56,7 +56,7 @@ body{
 /* ================= HERO ================= */
 
 .hero{
-  min-height:100vh;
+  min-height:120vh;
   display:flex;
   flex-direction:column;
   justify-content:flex-start;
@@ -184,6 +184,7 @@ body{
   color:#53ff8b;
   margin-bottom:60px;
 }
+
 /* ================= MENU LINKS ================= */
 
 .menu a{
@@ -196,7 +197,7 @@ body{
   color:#53ff8b;
 }
 
-/* Evita que el menú tape los títulos al navegar */
+/* Evita que el menú tape los títulos */
 
 #inicio,
 #problema,
@@ -206,4 +207,160 @@ body{
 #galeria,
 #participa{
   scroll-margin-top:100px;
+}
+
+/* ================= RESPONSIVE MOVIL ================= */
+
+@media (max-width:768px){
+
+  .navbar{
+    padding:12px 15px;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .logo{
+    font-size:1.6rem;
+  }
+
+  .menu{
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .menu li{
+    font-size:.85rem;
+  }
+
+  .hero{
+    min-height:100vh;
+    padding-top:160px;
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+  .titulo{
+    font-size:3rem;
+    margin-bottom:20px;
+    line-height:1.1;
+  }
+
+  .frase{
+    font-size:1.15rem;
+    margin-bottom:20px;
+  }
+
+  .descripcion{
+    max-width:100%;
+    font-size:.95rem;
+    line-height:1.7;
+    margin-bottom:35px;
+  }
+
+  .boton{
+    padding:14px 28px;
+    font-size:1rem;
+  }
+
+  .problema,
+  .campanas{
+    padding:70px 15px;
+  }
+
+  .problema h2,
+  .campanas h2{
+    font-size:2rem;
+  }
+
+  .problema > p{
+    font-size:1rem;
+    margin-bottom:35px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .card{
+    padding:22px;
+  }
+
+  .card h3{
+    font-size:1.4rem;
+  }
+
+  .card p{
+    font-size:.95rem;
+  }
+
+}
+
+/* ================= ESTADISTICAS HERO ================= */
+
+.estadisticas{
+  margin-top:60px;
+  width:100%;
+  max-width:800px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(83,255,139,.2);
+  border-radius:20px;
+  padding:25px;
+  backdrop-filter:blur(10px);
+}
+
+.estadistica{
+  display:grid;
+  grid-template-columns:170px 1fr 60px;
+  align-items:center;
+  gap:15px;
+  margin:18px 0;
+}
+
+.barra{
+  width:100%;
+  height:14px;
+  background:rgba(255,255,255,.12);
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.progreso{
+  height:100%;
+  background:#53ff8b;
+  border-radius:20px;
+}
+
+.reciclaje{
+  width:80%;
+}
+
+.reforestacion{
+  width:90%;
+}
+
+.agua{
+  width:65%;
+}
+
+.comunidad{
+  width:75%;
+}
+
+/* ===== MOVIL ===== */
+
+@media (max-width:768px){
+
+  .estadisticas{
+    margin-top:40px;
+    padding:18px;
+  }
+
+  .estadistica{
+    grid-template-columns:1fr;
+    gap:8px;
+    text-align:left;
+  }
+
 }
