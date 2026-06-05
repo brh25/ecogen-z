@@ -1,0 +1,209 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:#111;
+  color:white;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:20px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,.45);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.logo{
+  font-size:2rem;
+  font-weight:bold;
+  color:#53ff8b;
+}
+
+.menu{
+  display:flex;
+  gap:35px;
+  list-style:none;
+}
+
+.menu li{
+  cursor:pointer;
+  transition:.3s;
+  font-size:1.2rem;
+  font-weight:bold;
+}
+
+.menu li:hover{
+  color:#53ff8b;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+  text-align:center;
+
+  padding-top:180px;
+  padding-left:30px;
+  padding-right:30px;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.68),
+      rgba(0,0,0,.68)
+    ),
+    url('./assets/hero.png');
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.titulo{
+  font-size:5.5rem;
+  color:#53ff8b;
+  text-shadow:0 0 20px rgba(83,255,139,.5);
+  margin-bottom:45px;
+}
+
+.frase{
+  font-size:2rem;
+  color:#ffffff;
+  margin-bottom:35px;
+}
+
+.descripcion{
+  max-width:850px;
+  font-size:1.25rem;
+  line-height:1.8;
+  color:#e6e6e6;
+  margin-bottom:55px;
+}
+
+.boton{
+  background:#53ff8b;
+  color:#000;
+  border:none;
+  padding:18px 45px;
+  font-size:1.2rem;
+  font-weight:bold;
+  border-radius:50px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.boton:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 25px #53ff8b;
+}
+
+/* ================= PROBLEMA AMBIENTAL ================= */
+
+.problema{
+  background:#101010;
+  padding:100px 80px;
+  text-align:center;
+}
+
+.problema h2{
+  font-size:3rem;
+  color:#53ff8b;
+  margin-bottom:30px;
+}
+
+.problema > p{
+  max-width:900px;
+  margin:0 auto 60px auto;
+  font-size:1.2rem;
+  color:#d8d8d8;
+  line-height:1.8;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(83,255,139,.2);
+  border-radius:20px;
+  padding:35px;
+  backdrop-filter:blur(10px);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 25px rgba(83,255,139,.35);
+}
+
+.card h3{
+  color:#53ff8b;
+  margin-bottom:18px;
+  font-size:2rem;
+}
+
+.card p{
+  color:#dcdcdc;
+  line-height:1.7;
+  font-size:1.15rem;
+}
+
+/* ================= CAMPAÑAS ================= */
+
+.campanas{
+  background:#161616;
+  padding:100px 80px;
+  text-align:center;
+}
+
+.campanas h2{
+  font-size:3rem;
+  color:#53ff8b;
+  margin-bottom:60px;
+}
+/* ================= MENU LINKS ================= */
+
+.menu a{
+  color:white;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.menu a:hover{
+  color:#53ff8b;
+}
+
+/* Evita que el menú tape los títulos al navegar */
+
+#inicio,
+#problema,
+#campanas,
+#ayudar,
+#retos,
+#galeria,
+#participa{
+  scroll-margin-top:100px;
+}
