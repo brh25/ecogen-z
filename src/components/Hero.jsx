@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Hero() {
   return (
     <section id="inicio" className="hero">
@@ -16,11 +18,11 @@ function Hero() {
         acciones sostenibles y el cuidado de nuestro planeta.
       </p>
 
-      <a href="#participa">
+      <Link to="/participa">
         <button className="boton">
           ÚNETE AL CAMBIO
         </button>
-      </a>
+      </Link>
 
       <div className="estadisticas">
 
