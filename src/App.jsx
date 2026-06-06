@@ -1,25 +1,15 @@
 import './App.css'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import ProblemaAmbiental from './components/sections/ProblemaAmbiental'
-import Campanas from './components/sections/Campanas'
-import ComoAyudar from './components/sections/ComoAyudar'
-import EcoRetos from './components/sections/EcoRetos'
-import Galeria from './components/sections/Galeria'
-import Participa from './components/sections/Participa'
+import { Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import Problema from './pages/Problema'
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <ProblemaAmbiental />
-      <Campanas />
-      <ComoAyudar />
-      <EcoRetos />
-      <Galeria />
-      <Participa />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/problema" element={<Problema />} />
+    </Routes>
   )
 }
 
