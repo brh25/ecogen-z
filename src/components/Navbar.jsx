@@ -11,13 +11,11 @@ function Navbar() {
       <ul className="menu">
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/problema">Problema Ambiental</Link></li>
-
-        {/* Por ahora los demás los dejamos igual */}
-        <li><a href="#campanas">Campañas</a></li>
-        <li><a href="#ayudar">Cómo Ayudar</a></li>
-        <li><a href="#retos">Eco Retos</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#participa">Participa</a></li>
+        <li><Link to="/campanas">Campañas</Link></li>
+        <li><Link to="/ayudar">Cómo Ayudar</Link></li>
+        <li><Link to="/retos">Eco Retos</Link></li>
+        <li><Link to="/galeria">Galería</Link></li>
+        <li><Link to="/participa">Participa</Link></li>
       </ul>
 
     </nav>
